@@ -1,0 +1,102 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+form {
+  background-color: #eee;
+  padding: 1rem;
+  width: 65%;
+  margin: 0 auto;
+  border-radius: 7px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  form {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+form .input {
+  border: none;
+  border-radius: 6px;
+  padding: 7px;
+  width: 80%;
+  margin-right: 10px;
+  outline: none;
+  transition: 0.3s;
+}
+@media (max-width: 767px) {
+  form .input {
+    margin-bottom: 0.8rem;
+    margin-right: 0;
+    width: 100%;
+  }
+}
+form .input:focus {
+  outline: 2px solid rgba(0, 128, 128, 0.658);
+}
+form .add {
+  border: none;
+  background-color: rgba(0, 128, 128, 0.658);
+  color: #fff;
+  padding: 7px 14px;
+  border-radius: 4px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+form .add:hover,
+form .add:focus {
+  background-color: #fff;
+  color: rgba(0, 128, 128, 0.758);
+  outline: 2px solid rgba(0, 128, 128, 0.658);
+}
+.tasks-div {
+  width: 65%;
+  height: fit-content;
+  padding: 1rem;
+  background-color: #aaa;
+  margin: 2rem auto;
+  border-radius: 7px;
+}
+.tasks-div .task {
+  background-color: #eee;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 6px;
+  position: relative;
+  margin-bottom: 1rem;
+}
+@media (max-width: 767px) {
+  .tasks-div .task {
+    flex-direction: column;
+  }
+}
+.tasks-div .task p,
+.tasks-div .task button {
+  padding: 0;
+  margin: 0;
+}
+.tasks-div .task p {
+  padding: 7px;
+  font-weight: bold;
+}
+.tasks-div .task button {
+  border: none;
+  background-color: tomato;
+  padding: 3px 20px;
+  color: #eee;
+  font-weight: bold;
+  border-radius: 3px;
+  margin: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.tasks-div .task button:hover {
+  background-color: #fff;
+  color: tomato;
+  outline: 1px solid tomato;
+}
